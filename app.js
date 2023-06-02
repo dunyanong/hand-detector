@@ -20,7 +20,7 @@ let performanceTime = 0.000000001;
 // Define the performance time values for different screen sizes
 const laptopScreenTime = 0.00000001;
 const tabletScreenTime = 0.0001;
-const smartphoneScreenTime = 10;
+const smartphoneScreenTime = 1000;
 
 // Function to calculate performance time based on screen size
 const calculatePerformanceTime = () => {
@@ -28,10 +28,10 @@ const calculatePerformanceTime = () => {
 
     if (screenWidth <= 768) {
         // Tablet screen size or smaller
-        performanceTime = tabletScreenTime;
+        performanceTime = smartphoneScreenTime;
     } else if (screenWidth <= 1024) {
         // Laptop/Computer screen size
-        performanceTime = laptopScreenTime;
+        performanceTime = tabletScreenTime;
     } else {
         // Larger screens (e.g., desktop)
         performanceTime = smartphoneScreenTime;
