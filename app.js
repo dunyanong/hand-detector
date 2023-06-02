@@ -28,13 +28,13 @@ const calculatePerformanceTime = () => {
 
     if (screenWidth <= 768) {
         // Tablet screen size or smaller
-        performanceTime = tabletScreenTime;
+        performanceTime = smartphoneScreenTime;
     } else if (screenWidth <= 1024) {
         // Laptop/Computer screen size
-        performanceTime = laptopScreenTime;
+        performanceTime = tabletScreenTime;
     } else {
         // Larger screens (e.g., desktop)
-        performanceTime = smartphoneScreenTime;
+        performanceTime = laptopScreenTime;
     }
 };
 
