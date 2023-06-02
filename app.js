@@ -34,7 +34,7 @@ const calculatePerformanceTime = () => {
         performanceTime = tabletScreenTime;
     } else {
         // Larger screens (e.g., desktop)
-        performanceTime = smartphoneScreenTime;
+        performanceTime = laptopScreenTime;
     }
 };
 
